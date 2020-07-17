@@ -6,6 +6,6 @@
   "author": "cloveryuan <750363796@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.19"
   }
 }
