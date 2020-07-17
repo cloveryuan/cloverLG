@@ -1,0 +1,13 @@
+{
+  "name": "p1_node_cli",
+  "version": "1.0.0",
+  "description": "node_cli",
+  "main": "index.js",
+  "bin": "cli.js",
+  "author": "clover",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "inquirer": "^7.0.0"
+  }
+}

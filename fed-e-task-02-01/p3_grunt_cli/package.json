@@ -1,0 +1,65 @@
+{
+  "name": "pages-boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Always a pleasure scaffolding your awesome static sites.",
+  "keywords": [
+    "pages-boilerplate",
+    "boilerplate",
+    "pages",
+    "zce"
+  ],
+  "homepage": "https://github.com/zce/pages-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/zce/pages-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce/pages-boilerplate.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "zce",
+    "email": "w@zce.me",
+    "url": "https://zce.me"
+  },
+  "scripts": {},
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "bootstrap": "4.4.1",
+    "connect-livereload": "latest",
+    "grunt": "^1.1.0",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-concat": "latest",
+    "grunt-contrib-connect": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-htmlmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-sass": "^3.1.0",
+    "grunt-usemin": "latest",
+    "jquery": "3.4.1",
+    "load-grunt-tasks": "^5.1.0",
+    "matchdep": "latest",
+    "ngmshell": "latest",
+    "popper.js": "1.16.1",
+    "sass": "^1.22.10",
+    "shelljs": "latest"
+  },
+  "devDependencies": {
+    "grunt": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}

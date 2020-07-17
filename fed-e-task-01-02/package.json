@@ -1,0 +1,11 @@
+{
+  "name": "fed-e-task-01-02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cloveryuan/fed-e-task-01-02.git",
+  "author": "cloveryuan <750363796@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
