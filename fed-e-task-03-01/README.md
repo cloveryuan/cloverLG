@@ -18,12 +18,14 @@ let vm = new Vue({
 2.响应式数据是在vue2.0+版本是在实例化的时候，利用object.defineproperty()对data数据进行劫持，每条数据加上get，set，对其进行监听，才能每次属性更新的时候及时的对订阅者发起通知。vue3.0版本是对利用proxy实现数据的双向绑定，Proxy可以直接监听对象而非属性，对数组的更改也都能监测到
 3. Vue.set(target, key, value)   =》 this.$set(this.dog,'name','Trump')这样设置就是响应式的，
 原理看vue.set的set方法，我们发现set函数接收三个参数分别为 target、key、val，其中target的值为数组或者对象，数组主要通过splice方法来让页面重新渲染，对象defineReactive(ob.value, key, val)给新加的属性添加依赖，也就是响应数据了
+ 
 
  
 
 2、请简述 Diff 算法的执行过程
 patch=init([])
-Diff主要通过patch函数，比较新老虚拟dom的差异，把不同差异处渲染到真是的dom上
+通过patch函数打补丁，比较新老虚拟dom的差异，把不同差异处渲染到真实的dom上,最后返回新节点，作为下一次处理的旧节点
+* 对比新旧vnode是否是相同的节点（key和sel),如果不是，直接删除之前的节点，重新渲染新节点；如果是相同的节点，判断节点内是否有text并且内容和oldVnode文本内容不同，直接更新的新文本内容；如果新的Vnode有children，判断子节点是否有变化，判断子节点的过程就是用的diff算法，diff过程只进行同层级比较
 
 二、编程题
 1、模拟 VueRouter 的 hash 模式的实现，实现思路和 History 模式类似，把 URL 中的 # 后面的内容作为路由的地址，可以通过 hashchange 事件监听路由地址的变化。
